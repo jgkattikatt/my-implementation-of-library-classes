@@ -1,9 +1,17 @@
+#MY IMPLEMENTATION OF PYTHON'S DEFAULT DICTIONARY
+#jgkattikatt@gmail.com
+
 
 import random
 
 class DefaultDict():
+    """default dictionary implementation
+    """
 
     def __init__(self, default_value=None):
+        """instantiates a default dict instance
+           assigns a random value as a default value, if nothing is passed
+        """
         if default_value is None:
             default_value = random.random()
         self.default_value = default_value
@@ -39,6 +47,10 @@ class DefaultDict():
 
 
 if __name__ == '__main__':
-    pass
+    defdict = DefaultDict(1)
+    defdict[1] = 2
+    print defdict[2]
+    print defdict
+    print len(defdict)    
 
 
